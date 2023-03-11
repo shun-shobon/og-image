@@ -18,16 +18,9 @@ export interface Env {
   // MY_SERVICE: Fetcher;
 }
 
-let initialized = false;
-const moduleInit = (async () => {
-  if (initialized) return;
-
-  // @ts-expect-error: WebAssembly.Moduleを渡してるはずなのになんか動く
-  init(await initYoga(yogaWasm));
-  await initWasm(resvgWasm);
-
-  initialized = true;
-})();
+// @ts-expect-error
+init(await initYoga(yogaWasm));
+await initWasm(resvgWasm);
 
 export default {
   async fetch(
@@ -35,8 +28,6 @@ export default {
     env: Env,
     ctx: ExecutionContext
   ): Promise<Response> {
-    await moduleInit;
-
     const svg = await satori(
       <div
         style={{
