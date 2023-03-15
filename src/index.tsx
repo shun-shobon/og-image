@@ -18,7 +18,6 @@ export interface Env {
   // MY_SERVICE: Fetcher;
 }
 
-// @ts-expect-error
 init(await initYoga(yogaWasm));
 await initWasm(resvgWasm);
 

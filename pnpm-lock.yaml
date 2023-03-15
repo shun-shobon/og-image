@@ -1,10 +1,5 @@
 lockfileVersion: 5.4
 
-patchedDependencies:
-  yoga-wasm-web@0.3.2:
-    hash: q5ct5nfnptplamausdnshezutm
-    path: patches/yoga-wasm-web@0.3.2.patch
-
 specifiers:
   '@cloudflare/workers-types': ^4.20230307.0
   '@resvg/resvg-wasm': ^2.4.1
@@ -14,13 +9,13 @@ specifiers:
   typescript: ^4.9.5
   vitest: ^0.29.2
   wrangler: 2.12.3
-  yoga-wasm-web: 0.3.2
+  yoga-wasm-web: ^0.3.3
 
 dependencies:
   '@resvg/resvg-wasm': 2.4.1
   react: 18.2.0
   satori: 0.4.2
-  yoga-wasm-web: 0.3.2_q5ct5nfnptplamausdnshezutm
+  yoga-wasm-web: 0.3.3
 
 devDependencies:
   '@cloudflare/workers-types': 4.20230307.0
@@ -1429,7 +1424,7 @@ packages:
       emoji-regex: 10.2.1
       linebreak: 1.1.0
       postcss-value-parser: 4.2.0
-      yoga-wasm-web: 0.3.2_q5ct5nfnptplamausdnshezutm
+      yoga-wasm-web: 0.3.3
     dev: false
 
   /selfsigned/2.1.1:
@@ -1812,10 +1807,9 @@ packages:
     engines: {node: '>=12.20'}
     dev: true
 
-  /yoga-wasm-web/0.3.2_q5ct5nfnptplamausdnshezutm:
-    resolution: {integrity: sha512-X//8P6RHzkO4E1ba/wXwKOybeArNDQJI2vwzFLJxz5bfT9K8fB798ZVYvq+Z+hjRA0Wy2iUlOUch4n2+ddqbDQ==}
+  /yoga-wasm-web/0.3.3:
+    resolution: {integrity: sha512-N+d4UJSJbt/R3wqY7Coqs5pcV0aUj2j9IaQ3rNj9bVCLld8tTGKRa2USARjnvZJWVx1NDmQev8EknoczaOQDOA==}
     dev: false
-    patched: true
 
   /youch/2.2.2:
     resolution: {integrity: sha512-/FaCeG3GkuJwaMR34GHVg0l8jCbafZLHiFowSjqLlqhC6OMyf2tPJBu8UirF7/NI9X/R5ai4QfEKUCOxMAGxZQ==}
