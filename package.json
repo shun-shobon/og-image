@@ -2,7 +2,7 @@
   "name": "og-image",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "pnpm@7.29.2",
+  "packageManager": "pnpm@7.29.3",
   "scripts": {
     "start": "wrangler dev",
     "deploy": "wrangler publish",
