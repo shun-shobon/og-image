@@ -1,25 +1,7 @@
-import satori, { init } from "satori/wasm";
-import initYoga from "yoga-wasm-web";
-import { initWasm, Resvg } from "@resvg/resvg-wasm";
-import yogaWasm from "../node_modules/yoga-wasm-web/dist/yoga.wasm";
-import resvgWasm from "../node_modules/@resvg/resvg-wasm/index_bg.wasm";
+import { Card } from "./Card";
+import { generateImage } from "./image";
 
-export interface Env {
-  // Example binding to KV. Learn more at https://developers.cloudflare.com/workers/runtime-apis/kv/
-  // MY_KV_NAMESPACE: KVNamespace;
-  //
-  // Example binding to Durable Object. Learn more at https://developers.cloudflare.com/workers/runtime-apis/durable-objects/
-  // MY_DURABLE_OBJECT: DurableObjectNamespace;
-  //
-  // Example binding to R2. Learn more at https://developers.cloudflare.com/workers/runtime-apis/r2/
-  // MY_BUCKET: R2Bucket;
-  //
-  // Example binding to a Service. Learn more at https://developers.cloudflare.com/workers/runtime-apis/service-bindings/
-  // MY_SERVICE: Fetcher;
-}
-
-init(await initYoga(yogaWasm));
-await initWasm(resvgWasm);
+export interface Env {}
 
 export default {
   async fetch(
@@ -27,24 +9,7 @@ export default {
     env: Env,
     ctx: ExecutionContext
   ): Promise<Response> {
-    const svg = await satori(
-      <div
-        style={{
-          width: "100%",
-          height: "100%",
-          backgroundColor: "red",
-        }}
-      />,
-      {
-        width: 1200,
-        height: 630,
-        fonts: [],
-      }
-    );
-
-    const resvg = new Resvg(svg);
-    const image = resvg.render();
-    const png = image.asPng();
+    const png = await generateImage(<Card />, 1200, 630);
 
     return new Response(png);
   },
