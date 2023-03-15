@@ -4,7 +4,8 @@
   "private": true,
   "packageManager": "pnpm@7.29.3",
   "scripts": {
-    "start": "wrangler dev",
+    "dev": "wrangler dev",
+    "build": "wrangler publish --dry-run --minify --outdir dist",
     "deploy": "wrangler publish",
     "test": "vitest"
   },
