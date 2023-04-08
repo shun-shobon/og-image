@@ -8,8 +8,8 @@ dependencies:
     specifier: ^18.2.0
     version: 18.2.0
   satori:
-    specifier: ^0.4.4
-    version: 0.4.4
+    specifier: ^0.4.7
+    version: 0.4.7
   yoga-wasm-web:
     specifier: ^0.3.3
     version: 0.3.3
@@ -1419,8 +1419,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /satori@0.4.4:
-    resolution: {integrity: sha512-UCgoY7CXibFQmgI4ay4QSWUOca07nI9pY56w8NKrBq+bkGgiMbcPXZWj9bxukyJkEl/cgAICGjjxvwlDF2NYRw==}
+  /satori@0.4.7:
+    resolution: {integrity: sha512-angaQXTa5geGKxSD9+n85GlH71SfPJTMmrUJf76PZeV4gXWz8aOAxSEH0M1Ok/yUacrWxVto0WjV7iGkK0h3CQ==}
     engines: {node: '>=16'}
     dependencies:
       '@shuding/opentype.js': 1.4.0-beta.0
