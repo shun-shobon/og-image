@@ -12,7 +12,7 @@
   "dependencies": {
     "@resvg/resvg-wasm": "^2.4.1",
     "react": "^18.2.0",
-    "satori": "^0.4.13",
+    "satori": "^0.4.14",
     "yoga-wasm-web": "^0.3.3"
   },
   "devDependencies": {
