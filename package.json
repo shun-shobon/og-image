@@ -2,7 +2,7 @@
   "name": "og-image",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "pnpm@8.6.7",
+  "packageManager": "pnpm@8.6.9",
   "scripts": {
     "dev": "wrangler dev",
     "build": "wrangler publish --dry-run --minify --outdir dist",
