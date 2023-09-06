@@ -20,6 +20,6 @@
     "@types/react": "^18.2.21",
     "typescript": "^5.2.2",
     "vitest": "^0.34.3",
-    "wrangler": "3.6.0"
+    "wrangler": "3.7.0"
   }
 }
