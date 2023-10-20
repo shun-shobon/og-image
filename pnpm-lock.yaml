@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@resvg/resvg-wasm':
-    specifier: ^2.5.0
-    version: 2.5.0
+    specifier: ^2.6.0
+    version: 2.6.0
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -517,8 +517,8 @@ packages:
     resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==}
     dev: true
 
-  /@resvg/resvg-wasm@2.5.0:
-    resolution: {integrity: sha512-jM0zG54ykoGFiMMVvRxzHFVXhxCdQTGp+okLCWGIXt8bN2GLlsWpjvyU0vZJWkTsd+qLmy2dmYcPU02zC0IVMQ==}
+  /@resvg/resvg-wasm@2.6.0:
+    resolution: {integrity: sha512-iDkBM6Ivex8nULtBu8cX670/lfsGxq8U1cuqE+qS9xFpPQP1enPdVm/33Kq3+B+bAldA+AHNZnCgpmlHo/fZrQ==}
     engines: {node: '>= 10'}
     dev: false
 
